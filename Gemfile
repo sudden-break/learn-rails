@@ -16,6 +16,7 @@ gem 'gibbon'
 gem 'google_drive'
 gem 'high_voltage'
 gem 'simple_form'
+gem 'figaro'
 
 group :development, :test do
   gem 'byebug'
