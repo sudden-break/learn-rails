@@ -13,7 +13,7 @@ class Contact
   def update_spreadsheet
     connection = GoogleDriveV0.login(Figaro.env.email_provider_username, Figaro.env.email_provider_password)
     
-    ss = connection.spreadsheet_by_title('Learn-Rails_Example')
+    ss = connection.spreadsheet_by_title('Learn-Rails-Example')
     if ss.nil?
       ss = connection.create_spreadsheet('Learn-Rails-Example')
     end
